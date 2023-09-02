@@ -116,13 +116,27 @@ class PieceClass{
                 for(c=0; c < COL; c++){
                     BOARD[0][c] = GRID_COLOR;
                 }
-
                 SCORE += 10;
+                if(SPEED < 1000){
+                    SPEED += 50;
+                }
+                console.log(SPEED)
             };
         };
         
         DrawBoard();
         SCORE_ELEMENT.innerHTML = SCORE;
+        if (SPEED < 200){
+            document.getElementById('speed').innerHTML = '1'
+        }else if(SPEED <= 400){
+            document.getElementById('speed').innerHTML = '2'
+        }else if(SPEED <= 600){
+            document.getElementById('speed').innerHTML = '3'
+        }else if(SPEED <= 800){
+            document.getElementById('speed').innerHTML = '4'
+        }else if(SPEED > 800){
+            document.getElementById('speed').innerHTML = 'MAX 5'
+        }
 
     };
 

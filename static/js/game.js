@@ -23,10 +23,11 @@ function ControlPiece(event){
 
 let dropStart = Date.now();
 let gameOver = false;
+var SPEED = 0.5
 function Drop() {
     let now = Date.now();
     let delta = now - dropStart;
-    if (delta > 1000) {
+    if (delta > (1000 - SPEED)) {
         Piece.MoveDown();
         dropStart = Date.now();
     }
