@@ -35,7 +35,7 @@ function DrawBoard(){
     for(r = 0; r < ROW; r++){
         for(c=0; c < COL; c++){
             let position = [c, r]
-            DrawnSquare(position, BOARD[r][c], false);
+            DrawnSquare(position, BOARD[r][c], true);
         };
     };
 };
