@@ -10,25 +10,25 @@ class PieceClass{
         this.y = -2;
     };
 
-    FillColor(color){
+    FillColor(color,active){
         for(r = 0; r < this.ActiveTetro.length;r++){
             for(c = 0; c < this.ActiveTetro.length; c++){
                 if(this.ActiveTetro[r][c]){
                     let NewX = this.x + c
                     let NewY = this.y + r
                     let position = [NewX, NewY];
-                    DrawnSquare(position, color, true);
+                    DrawnSquare(position, color, active);
                 };
             };
         };
     };
 
     Drawn(){
-        this.FillColor(this.color);
+        this.FillColor(this.color, false);
     };
 
     UnDrawn(){
-        this.FillColor(GRID_COLOR);
+        this.FillColor(GRID_COLOR, true);
     };
 
     MoveDown(){
@@ -137,24 +137,31 @@ class PieceClass{
                 let NewY = this.y + r + y;
 
                 if(NewX < 0 || NewX >= COL || NewY >= ROW){
-                    if(NewY >= ROW){                        
-                    document.querySelector('.canvas-cont').style.top = "55%"
+                    if(NewY >= ROW){           
+                    setTimeout(() => {
+                        document.querySelector('.canvas-cont').style.top = "55%"
+                    }, 10);             
                     this.color = '#2243CC'
+                    this.FillColor(this.color, true);
                     setTimeout(function() {
                         document.querySelector('.canvas-cont').style.top = "50%";
                     }, 100);    
                     }
-                    if(NewX <= 0){
-                        document.querySelector('.canvas-cont').style.left = "45%"
+                    if(NewX < 0){
+                        setTimeout(() => {
+                            document.querySelector('.canvas-cont').style.left = "45%"
+                        }, 10);                          
                         setTimeout(function() {
                             document.querySelector('.canvas-cont').style.left = "50%";
                         }, 100);  
                     }
                     if(NewX >= COL){
-                        document.querySelector('.canvas-cont').style.left = "55%"
+                        setTimeout(() => {
+                            document.querySelector('.canvas-cont').style.left = "55%"
+                        }, 10);                          
                         setTimeout(function() {
                             document.querySelector('.canvas-cont').style.left = "50%";
-                        }, 50);  
+                        }, 60);  
                     }
                     return true;
                 }
@@ -164,7 +171,9 @@ class PieceClass{
                 };
 
                 if(BOARD[NewY][NewX] != GRID_COLOR){
-                    document.querySelector('.canvas-cont').style.top = "55%"
+                    setTimeout(() => {
+                        document.querySelector('.canvas-cont').style.top = "55%"
+                    }, 10);  
                     this.color = '#2243CC'
                     setTimeout(function() {
                         document.querySelector('.canvas-cont').style.top = "50%";
