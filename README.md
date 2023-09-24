@@ -34,5 +34,5 @@ Todos os direitos reservados © King.
 
 ### Créditos
 
-Este projeto foi desenvolvido por King (Alex K.M. Chaves.
+Este projeto foi desenvolvido por King | Alex K.M. Chaves.
 Divirta-se jogando Tetris!
