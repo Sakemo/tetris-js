@@ -1,3 +1,4 @@
+### Português - BR
 # Tetris em HTML, CSS e JavaScript
 
 Este é um projeto de Tetris criado em HTML, CSS e JavaScript com efeitos visuais de canvas que reagem ao peso e direção da peça. O jogo possui um visual amigável em português e também inclui uma mudança de velocidade de acordo com a pontuação do jogador.
@@ -36,3 +37,42 @@ Todos os direitos reservados © King.
 
 Este projeto foi desenvolvido por King | Alex K.M. Chaves.
 Divirta-se jogando Tetris!
+
+# Tetris in HTML, CSS and JavaScript
+
+This is a Tetris project created in HTML, CSS and JavaScript with canvas visual effects that react to the weight and direction of the piece. The game has a friendly look in Portuguese and also includes a speed change according to the player's score.
+
+## Home screen
+
+![Home Screen](/img/logo.png)
+
+## How to play
+
+- Use the arrow keys to control the piece:
+   - Left arrow: Moves the piece to the left.
+   - Right arrow: Move the piece to the right.
+   - Up arrow: Rotate the piece.
+   - Down arrow: Makes the piece go down faster.
+
+## Game Objective
+
+The objective of Tetris is to horizontally fill an entire line with blocks, making the line disappear and earning you points. The more lines you clear at once, the more points you will earn.
+
+## Game Speed
+
+The game speed increases as you earn points. The current score and game speed are displayed on the screen.
+
+## Game over
+
+The game ends when the stacked pieces reach the top of the screen. When this happens, you will see the "Game Over" screen. You can restart the game by pressing F5.
+
+## Copyright
+
+All rights reserved © King.
+
+---
+
+### Credits
+
+This project was developed by King | Alex K.M. Keys.
+Have fun playing Tetris!
