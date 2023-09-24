@@ -38,6 +38,7 @@ Todos os direitos reservados © King.
 Este projeto foi desenvolvido por King | Alex K.M. Chaves.
 Divirta-se jogando Tetris!
 
+### English - USA
 # Tetris in HTML, CSS and JavaScript
 
 This is a Tetris project created in HTML, CSS and JavaScript with canvas visual effects that react to the weight and direction of the piece. The game has a friendly look in Portuguese and also includes a speed change according to the player's score.
